@@ -1,0 +1,6 @@
+[exchange]
+name = "coinbasepro"
+
+
+[analyst]
+    config = "./analyst.toml"

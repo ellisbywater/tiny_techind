@@ -1,0 +1,78 @@
+[indicators]
+    [indicators.ema]
+        [indicators.ema.1]
+        period = 10
+        fast_period = 0
+        slow_period = 0
+        std_dev = 0
+        signal_period = 0
+        field = "close"
+        [indicators.ema.2]
+        period = 20
+        fast_period = 0
+        slow_period = 0
+        std_dev = 0
+        signal_period = 0
+        field = "close"
+        [indicators.ema.3]
+        period = 50
+        fast_period = 0
+        slow_period = 0
+        std_dev = 0
+        signal_period = 0
+        field = "close"
+        [indicators.ema.4]
+        period = 200
+        fast_period = 0
+        slow_period = 0
+        signal_period = 0
+        std_dev = 0
+        field = "close"
+
+    [indicators.macd]
+        [indicators.macd.1]
+        period = 0
+        fast_period = 12
+        slow_period = 26
+        signal_period = 9
+        std_dev = 0
+        field = "close"
+
+    [indicators.rsi]
+        [indicators.rsi.1]
+        period = 14
+        fast_period = 0
+        slow_period = 0
+        signal_period = 0
+        std_dev = 0
+        field = "close"
+
+    [indicators.bollinger_bands]
+        [indicators.bollinger_bands.1]
+        period = 20
+        fast_period = 0
+        slow_period = 0
+        signal_period = 0
+        field = "close"
+        std_dev = 2
+
+    [indicators.sma]
+        [indicators.sma.1]
+        period = 30
+        fast_period = 0
+        slow_period = 0
+        signal_period = 0
+        std_dev = 0
+        field = "close"
+
+[candles]
+    interval = "1d"
+    limit = 300
+
+[markets]
+    [markets.btc-usd]
+        base = "btc"
+        quote = "usd"
+    [markets.eth-usd]
+        base = "eth"
+        quote = "usd"
