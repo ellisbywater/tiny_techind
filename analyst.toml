@@ -70,9 +70,6 @@
     limit = 300
 
 [markets]
-    [markets.btc-usd]
-        base = "btc"
-        quote = "usd"
-    [markets.eth-usd]
-        base = "eth"
-        quote = "usd"
+    currencies = ["BTC-USD", "ETH-USD"]
+    stocks = ["TSLA"]
+
