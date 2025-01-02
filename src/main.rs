@@ -202,7 +202,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             .header(CONTENT_TYPE, "application/json")
             .header(AUTHORIZATION, format!("Bearer {}", &polygon_api_key))
             .send().await.expect("Error fetching candles");
-
+        
+        
         match candles_res.status()  {
             reqwest::StatusCode::OK => {
                 match candles_res.json::<PolygonAPIResponse>().await { 
@@ -222,6 +223,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 println!("Error fetching candles: {}", other);
             }
         }
+        
     }
 
     // iterate over indicators in analyst_config
